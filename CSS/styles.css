@@ -245,7 +245,7 @@ body, html {
   background-color: white;
   padding: 15px; /* Padding around the logo */ 
   margin-top: 48px;
-  position: relative;
+  
 }
 
 /* empty but I made it to control the image inside flex-container if need be */
