@@ -250,12 +250,8 @@ body, html {
 
 /* empty but I made it to control the image inside flex-container if need be */
 .flex-image {
-    font-size: 5vw;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%) }
+  max-width: 500px;
+  margin: auto;  
 }
 
 .main {
