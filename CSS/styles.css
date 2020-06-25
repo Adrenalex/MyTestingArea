@@ -251,6 +251,7 @@ body, html {
 .flex-image > h1 {
    font-size: 3vw;
    align-items: center;
+   justify-content: center;
 }
 
 .main {
