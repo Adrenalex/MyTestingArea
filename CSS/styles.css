@@ -245,12 +245,12 @@ body, html {
   background-color: white;
   padding: 15px; /* Padding around the logo */ 
   margin-top: 48px;
-  text-align: center
+  
 }
 
 /* empty but I made it to control the image inside flex-container if need be */
 .flex-image {
-   
+   text-align: center
 }
 
 .main {
