@@ -249,7 +249,8 @@ body, html {
 
 /* empty but I made it to control the image inside flex-container if need be */
 .flex-image > h1 {
-   font-size: 5vw;
+   font-size: 3vw;
+	text-align: center;
 }
 
 .main {
