@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Register</title>
+		<link href="CSS/styles.css" rel="stylesheet" type="text/css">
+		<!-- Visit https://api.jquery.com & for more info. -->
+		<!-- jQuery Library located in public html -->
+		<script src="jquery-3.5.1.min.js"></script>
+	</head>
+	
+	<body>
+		
+		<div class="body-container">
+			
+			<div class="navbar">
+				<a href="index.htm">Home</a>
+				<a href="login.htm">Login</a>
+				<a href="#">About</a>
+			</div>
+			
+			<div class="flex-container">
+				
+				<div class="flex-image">
+					<img src="/images/img-website/comparlogo1.png">
+				</div>
+				
+			</div> 
+			
+			<img src="/images/img-website/harbar.png">
+			
+			<div class="register">
+				<h1>Register</h1>
+				<form id="registerform" autocomplete="off">
+					<label for="username">
+						<i class="fas fa-user"></i>
+					</label>
+					<input type="text" name="username" placeholder="Username" id="username" required>
+					<label for="password">
+						<i class="fas fa-lock"></i>
+					</label>
+					<input type="password" name="password" placeholder="Password" id="password" required>
+					<label for="email">
+						<i class="fas fa-envelope"></i>
+					</label>
+					<input type="email" name="email" placeholder="Email" id="email" required>
+					<a id= "register-button" class= "register-button" href= "#">Register</a>
+				</form>
+				
+			</div>
+		</div>
+		
+		
+		<!-- submit function -->
+		<script>
+			<!-- Prevent function execution until html is loaded. -->
+			$(document).ready(function() {
+			//Receive click event.
+			$("#register-button").on("click",function(e) {
+			//Override button click event to prevent default behavior.
+			e.preventDefault();
+			
+			//User input values stored in a variable.
+			var userNameValue = $("#username").val()
+			var passwordValue = $("#password").val()
+			var emailValue = $("#email").val()
+			
+			
+			//Prepare aJax request.
+			$.ajax({
+			//Add request parameters.
+			//Php file to run.
+			//Request type.
+			//Data map to send.
+			url:"register.php",
+			method:"POST",
+			data:{
+				//Add key value to data map.
+				username:userNameValue,
+				password:passwordValue,
+				email:emailValue
+			},
+			
+		
+			//Data returnedfrom php script.
+			}).done(function(response){
+			    
+		    //response may contain html..REMOVE ALL CHARACTERS IN THE STRING UP TO THE BRACKET, which is the start of the json object.
+			response = response.substring(response.indexOf("{"));
+		    console.log(response);//Remove after testing.
+			
+			//Parse response.
+			var jsonData = JSON.parse(response);
+			
+		
+			if(jsonData['p_isError']==true){
+				//Show window error dialog.
+			    console.log(jsonData['p_isError'])
+			    console.log(jsonData['p_message'])
+			    alert(jsonData['p_message'])
+			}else{
+			    //Redirect to verification.html.
+			    window.location.href = "https://www.compar.store/verification.htm";
+			}
+			
+		});
+		
+		});
+		});
+		</script>
+	</body>
+</html>
