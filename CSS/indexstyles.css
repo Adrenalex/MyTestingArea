@@ -1,16 +1,12 @@
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 320px) {
     body, html, input[type=submit] {
-      width: 100%;
+    width: 100%;
       margin-top: 0;
      }
    } 
 
-   @viewport {
-    width: device-width ;
-    zoom: 1.0 ;
-  } 
-  
+     
   /* my personal styles */
   body, html {
     background-color: white;
