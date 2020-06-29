@@ -6,9 +6,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-body {
-  background-color: #435165;
-}
+
 .login {
   width: 400px;
   background-color: #ffffff;
@@ -203,7 +201,7 @@ body, html {
 }
 
 .body-container {
-  background-color: white;
+  background-color: rgb(234, 237, 237);
 } 
 
 .body-container > img {
@@ -264,55 +262,116 @@ body, html {
   width: 100%;
 }
 
+/* (Scroll down for gradient rules) */
+#show_bg_2 {
+    background-image:
+    linear-gradient(to bottom,  rgba(255, 255, 255, 0.00),  rgba(255, 255, 255, 0.80)),
+    url('/images/img-website/tablet-kiosk.png');
+    width: 100%;
+    height: 725px;
+    background-size: cover;
+    color: white;
+    padding: 20px;
+    
+}
+
 .my-personal-adbar {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   
+  padding: 10px;
+  margin: 10px;
+  height: 500px;
+  border-style: solid;
+  border-color: firebrick;
+  
+}
+
+.buscard1outer {
+  width: auto;
 }
 
 /* business card 1 css styles */
 .buscard1 {
-  border-style: solid;
-  border-color: black;
-  width: 25%;
+  width: 100%;
   text-align: center;
   color: black;
   padding: 10px;
-      
+  height: 485px;
+  border-style: solid;
+  border-color: white;
 }
 
+.buscard1image {
+height: 100%;
+width: 100%;
+}
+
+
 .buscard1 > h1 {
-  text-align: top;
-  border-style: solid;
-  border-color: black;
-  margin-top: 0;
+text-align: top;
+margin-top: 0;
 
 }
 
 /* business card 2 css styles */
+.buscard2outer {
+  width: auto;
+  position: relative;
+}
+
 .buscard2 {
-  border-style: solid;
-  border-color: black;
-  width: 25%;
+  width: 33%;
   text-align: center;
   color: black;
   padding: 10px;
+  height: 485px;
+  border-style: solid;
+  border-color: white;
+}
+
+.buscard2image {
+  height: 475px;
+  width: 100%;
 }
 
 .buscard2 > h1  {
   text-align: top;
-  border-style: solid;
-  border-color: black;
   margin-top: 0;
 
 }
 
-.biography {
+/* business card 3 css styles */
+.buscard3outer {
+  width: auto;
+}
+
+.buscard3 {
+  width: 33%;
+  text-align: center;
+  color: black;
+  padding: 10px;
+  height: 485px;  
   border-style: solid;
-  border-color: black;
-  margin: 20px;
+  border-color: white;
+}
+.buscard3image {
+  height: 100%;
+  width: 100%;
+}
+
+.buscard3 > h1  {
+  text-align: top;
+  margin-top: 0;
+
+}
+
+
+
+.biography {
+  
 
 }
 
@@ -414,7 +473,8 @@ body {
 .image-popup .con {
   display: flex;
   flex-flow: column;
-  background-color: #ffffff;
+  background-or: #ffffff;
+  position: relative;
   padding: 25px;
   border-radius: 5px;
 }
@@ -425,7 +485,7 @@ body {
 .image-popup .con .edit, .image-popup .con .trash {
   display: inline-flex;
   justify-content: center;
-  align-self: flex-end;
+  align-items: flex-end;
   width: 40px;
   text-decoration: none;
   color: #FFFFFF;

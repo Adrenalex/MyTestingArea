@@ -1,0 +1,253 @@
+
+  
+  /* my personal styles */
+  body, html {
+    background-color: white;
+    height: 100%;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .body-container {
+    
+  } 
+  
+  .body-container > img {
+    width: 100%;
+    height: 8px;
+    display:block;
+  }
+  
+  /* The navigation bar */
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+  
+  /* Flex box logo and links at top of page */
+  .flex-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 15px; /* Padding around the logo */ 
+    margin-top: 48px;
+    
+  }
+  
+  /* empty but I made it to control the image inside flex-container if need be */
+  .flex-image {
+    max-width: 500px;
+    margin: auto;  
+    font-size: 50px;
+  }
+  
+  .main {
+    text-align: center;
+    top: 50%;
+    
+  }
+  
+  .main > img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* (Scroll down for gradient rules) */
+  #show_bg_2 {
+      background-image:
+      linear-gradient(to bottom,  rgba(255, 255, 255, 0.00),  rgba(255, 255, 255, 1.00)),
+      url('https://www.compar.store/images/img-business-location/IMG_location_fox_structures.jpg');
+      width: 100%;
+      height: 1050px;
+      background-size: cover;
+      color: white;
+      padding: 20px;
+      text-align: center;
+  }
+
+  .main2 {
+      margin-top: -350px;
+  }
+  
+  .my-personal-adbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 500px;
+    
+    
+    	
+}
+  
+  .buscard1outer {
+    width: 33%;
+    background-color: white;
+    
+    
+    margin: 10px;
+  }
+  
+  /* business card 1 css styles */
+  .buscard1 {
+    text-align: center;
+    color: black;
+    padding: 10px;
+    background-image:url('https://www.compar.store/images/img-product/IMG_fox_structures_staircase.jpg');
+    height: 400px;
+    max-width: 100%;
+    background-size: cover;
+    margin: 15px;
+  }
+  
+  .buscard1image {
+  height: 100%;
+  width: 100%;
+  }
+  
+  
+  .buscard1 > h1 {
+  text-align: top;
+  margin-top: 0;
+  
+  }
+  
+  /* business card 2 css styles */
+  .buscard2outer {
+    width: 33%;
+    background-color: white;
+    margin: 10px;
+  }
+  
+  .buscard2 {
+    text-align: center;
+    color: black;
+    padding: 10px;
+    background-image:url('https://www.compar.store/images/img-product/IMG_round_cattle_gate.jpg');
+    height: 400px;
+    max-width: 100%;
+    background-size: cover;
+    margin: 15px;
+  }
+  
+  .buscard2image {
+    
+  }
+  
+  .buscard2 > h1  {
+    text-align: top;
+    margin-top: 0;
+  }
+  
+  /* business card 3 css styles */
+  .buscard3outer {
+    width: 33%;
+    background-color: white;
+    margin: 10px;
+  }
+  
+  .buscard3 {
+    position: relative;
+  }
+
+  .buscard3image{
+    text-align: center;
+    color: black;
+    padding: 10px;
+    background-image:url('https://www.compar.store/images/img-business-card/IMG_card_front_fox_structures_allen_tim_06282020.jpg');
+    height: 400px;
+    max-width: 90%;
+    background-repeat: no-repeat;
+    margin: 15px;
+  }
+  
+  .buscard3 > h1  {
+    text-align: top;
+    margin-top: 0;
+  
+  }
+
+  .buscard3bottom {
+      padding: 50px;
+      background-color: #89cff0;
+      align-items: bottom;
+      position: absolute;
+      bottom: 0px;
+      left: -18%;
+  }
+  
+  .myButton {
+	box-shadow:inset 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	background-color:#ffec64;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	background-color:#ffab23;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+  
+  .biography {
+    
+  
+  }
+  
+  .login-container {
+    
+    width: auto;
+    top: 50%;
+    margin-left: 25%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  .login-container1 {
+      border-style: solid;
+      border-color: green;
+  }
+  
+  .footer {
+      position: absolute;
+      bottom: 0;
+      
+  }
+  

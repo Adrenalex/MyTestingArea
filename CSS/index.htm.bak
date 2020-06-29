@@ -67,11 +67,6 @@
                 </div>
                 
                 <div class="buscard3outer">
-
-                    <div class="buscard3bottom"><a href="#" class="myButton">Contact us!</a>
-                        <div>Click Contact us to inquire about displaying your local business advertising!</div>
-                    </div>
-                    
                 <h1>Shop locally!</h1>
                 
                 <div class="buscard3">
@@ -79,7 +74,9 @@
                         
                     </div>
 
-                    
+                    <div class="buscard3bottom"><a href="#" class="myButton">Contact us!</a>
+                        <div>Click Contact us to inquire about displaying your local business advertising!</div>
+                    </div>
 
                 </div>
                 
