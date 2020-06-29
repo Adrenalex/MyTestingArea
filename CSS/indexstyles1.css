@@ -71,6 +71,10 @@
     height: 100%;
     width: 100%;
   }
+
+  .main2 {
+    
+  }
   
   /* (Scroll down for gradient rules) */
   #show_bg_2 {
@@ -95,115 +99,14 @@
     align-items: center;
     justify-content: center;
     padding: 10px;
-    height: 500px;
-    
-}
-
-.my-personal-adbar > img {
-  max-width: 100%;
+    height: 100%;
+    border-style: solid;
+    	
 }
   
-  .buscard1outer {
-    width: 33%;
-    background-color: white;
-    margin: 10px;
-    font-size: 2vw;
-    border-style: solid;
-  }
+.cell1 {
   
-  /* business card 1 css styles */
-  .buscard1 {
-    text-align: center;
-    color: black;
-    padding: 10px;
-    background-image:url('https://www.compar.store/images/img-product/IMG_fox_structures_staircase.jpg');
-    height: 400px;
-    width: 100%;
-    background-size: cover;
-    margin: 15px;
-    
-  }
-  
-  .buscard1image {
-    width:100%;
-    padding-top: 66.66%; /* 1:1 Aspect Ratio */
-  }
-  
-  
-  .buscard1 > h1 {
-  text-align: top;
-  margin-top: 0;
-  font-size:5vw
-  }
-  
-  /* business card 2 css styles */
-  .buscard2outer {
-    width: 33%;
-    background-color: white;
-    margin: 10px;
-    font-size: 2vw;
-    border-style: solid;
-  }
-  
-  .buscard2 {
-    text-align: center;
-    color: black;
-    padding: 10px;
-    background-image:url('https://www.compar.store/images/img-product/IMG_round_cattle_gate.jpg');
-    height: 400px;
-    max-width: 100vw;
-    background-size: cover;
-    margin: 15px;
-    align-self: center;
-  }
-  
-  .buscard2image {
-    
-  }
-  
-  .buscard2 > h1  {
-    text-align: top;
-    margin-top: 0;
-  }
-  
-  /* business card 3 css styles */
-  .buscard3outer {
-    width: 40%;
-    background-color: white;
-    margin: 10px;
-    font-size: 2vw;
-    border-style: solid;
-  }
-  
-  .buscard3 {
-    
-  }
-
-  .buscard3image{
-    text-align: center;
-    color: black;
-    background-image:url('https://www.compar.store/images/img-business-card/IMG_card_front_fox_structures_allen_tim_06282020.jpg');
-    height: 400px;
-    max-width: 100%;
-    background-repeat: no-repeat;
-    margin: 15px;
-    border-style: solid;
-    
-  }
-  
-  .buscard3 > h1  {
-    text-align: top;
-    margin-top: 0;
-    
-  }
-
-  .buscard3bottom {
-      
-      background-color: #89cff0;
-      border-style: solid;
-      
-      
-  }
+}
   
   .myButton {
 	box-shadow:inset 0px 1px 0px 0px #fff6af;
@@ -266,26 +169,3 @@
       margin-top: 0;
      }
    } 
-
-   .buscard2copy {
-    text-align: center;
-    color: black;
-    padding: 10px;
-    background-image:url('https://www.compar.store/images/img-product/IMG_round_cattle_gate.jpg');
-    height: 400px;
-    max-width: 100%;
-    background-size: cover;
-    margin: 15px;
-    align-self: center;
-   }
-
-   .buscard3copy {
-    text-align: center;
-    color: black;
-    background-image:url('https://www.compar.store/images/img-business-card/IMG_card_front_fox_structures_allen_tim_06282020.jpg');
-    height: 400px;
-    width: 33%;
-    background-repeat: no-repeat;
-    margin: 15px;
-    border-style: solid;
-   }

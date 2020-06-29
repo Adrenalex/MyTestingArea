@@ -1,11 +1,18 @@
- 
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 320px) {
+    body, input[type=submit] {
+        width: 100vw;
+  height: 100vh;
+     }
+   } 
+
+     
   /* my personal styles */
   body, html {
     background-color: white;
-    height: 100%;
-    margin: 0;
+    width: 100vw;
+  height: 100vh;
     width: 100%;
-    font-size: 2vw;
   }
   
   .body-container {
@@ -74,21 +81,22 @@
   
   /* (Scroll down for gradient rules) */
   #show_bg_2 {
-      background-image:
-      linear-gradient(to bottom,  rgba(255, 255, 255, 0.00),  rgba(255, 255, 255, 1.00)),
-      url('https://www.compar.store/images/img-business-location/IMG_location_fox_structures.jpg');
-      width: 100%;
-      height: 1050px;
-      background-size: cover;
-      color: white;
-      padding: 20px;
-      text-align: center;
+    background-image:
+    linear-gradient(to bottom,  rgba(255, 255, 255, 0.00),  rgba(255, 255, 255, 1.00)),
+    url('https://www.compar.store/images/img-business-location/IMG_location_fox_structures.jpg');
+    width: 100%;
+    height: 1050px;
+    background-size: cover;
+    color: white;
+    padding: 20px;
+    text-align: center;
   }
-/*
+
+  /* THis changes where teh 3 cells sit 
   .main2 {
       margin-top: -350px;
-  }
-  */
+  }*/
+  
   .my-personal-adbar {
     display: flex;
     flex-direction: row;
@@ -97,18 +105,20 @@
     padding: 10px;
     height: 500px;
     
+    
+    	
 }
 
-.my-personal-adbar > img {
-  max-width: 100%;
+.my-personal-adbar > h1{
+    font-size: 8vw;
 }
   
   .buscard1outer {
     width: 33%;
     background-color: white;
+    
+    
     margin: 10px;
-    font-size: 2vw;
-    border-style: solid;
   }
   
   /* business card 1 css styles */
@@ -121,19 +131,18 @@
     width: 100%;
     background-size: cover;
     margin: 15px;
-    
   }
   
   .buscard1image {
-    width:100%;
-    padding-top: 66.66%; /* 1:1 Aspect Ratio */
+  height: 100%;
+  width: 100%;
   }
   
   
   .buscard1 > h1 {
   text-align: top;
   margin-top: 0;
-  font-size:5vw
+  
   }
   
   /* business card 2 css styles */
@@ -141,8 +150,7 @@
     width: 33%;
     background-color: white;
     margin: 10px;
-    font-size: 2vw;
-    border-style: solid;
+    
   }
   
   .buscard2 {
@@ -151,10 +159,10 @@
     padding: 10px;
     background-image:url('https://www.compar.store/images/img-product/IMG_round_cattle_gate.jpg');
     height: 400px;
-    max-width: 100vw;
+    max-width: 100%;
     background-size: cover;
     margin: 15px;
-    align-self: center;
+    
   }
   
   .buscard2image {
@@ -171,30 +179,28 @@
     width: 40%;
     background-color: white;
     margin: 10px;
-    font-size: 2vw;
-    border-style: solid;
   }
   
   .buscard3 {
-    
-  }
-
-  .buscard3image{
     text-align: center;
     color: black;
-    background-image:url('https://www.compar.store/images/img-business-card/IMG_card_front_fox_structures_allen_tim_06282020.jpg');
+    background-image:url('/images/img-website/foxstruc2.jpg');
     height: 400px;
-    max-width: 100%;
+    width: 100%;
     background-repeat: no-repeat;
     margin: 15px;
     border-style: solid;
+  }
+
+  .buscard3image{
+    
     
   }
   
   .buscard3 > h1  {
     text-align: top;
     margin-top: 0;
-    
+  
   }
 
   .buscard3bottom {
@@ -258,34 +264,4 @@
       bottom: 0;
       
   }
-
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 320px) {
-    body, html, input[type=submit] {
-    width: 100%;
-      margin-top: 0;
-     }
-   } 
-
-   .buscard2copy {
-    text-align: center;
-    color: black;
-    padding: 10px;
-    background-image:url('https://www.compar.store/images/img-product/IMG_round_cattle_gate.jpg');
-    height: 400px;
-    max-width: 100%;
-    background-size: cover;
-    margin: 15px;
-    align-self: center;
-   }
-
-   .buscard3copy {
-    text-align: center;
-    color: black;
-    background-image:url('https://www.compar.store/images/img-business-card/IMG_card_front_fox_structures_allen_tim_06282020.jpg');
-    height: 400px;
-    width: 33%;
-    background-repeat: no-repeat;
-    margin: 15px;
-    border-style: solid;
-   }
+  
