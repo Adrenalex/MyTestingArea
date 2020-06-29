@@ -1,4 +1,10 @@
-
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    body, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+     }
+   } 
   
   /* my personal styles */
   body, html {
@@ -138,6 +144,7 @@
     width: 33%;
     background-color: white;
     margin: 10px;
+    
   }
   
   .buscard2 {
@@ -149,6 +156,7 @@
     max-width: 100%;
     background-size: cover;
     margin: 15px;
+    
   }
   
   .buscard2image {
@@ -162,7 +170,7 @@
   
   /* business card 3 css styles */
   .buscard3outer {
-    width: 33%;
+    width: 40%;
     background-color: white;
     margin: 10px;
   }
@@ -174,12 +182,13 @@
   .buscard3image{
     text-align: center;
     color: black;
-    
     background-image:url('https://www.compar.store/images/img-business-card/IMG_card_front_fox_structures_allen_tim_06282020.jpg');
     height: 400px;
     max-width: 100%;
     background-repeat: no-repeat;
     margin: 15px;
+    border-style: solid;
+    
   }
   
   .buscard3 > h1  {
@@ -189,10 +198,9 @@
   }
 
   .buscard3bottom {
-      padding: 10px;
-      background-color: #89cff0;
-      align-items: top;
       
+      background-color: #89cff0;
+      border-style: solid;
       
       
   }
