@@ -1,4 +1,11 @@
- 
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 320px) {
+    body, html, input[type=submit] {
+    width: 100%;
+      margin-top: 0;
+     }
+   } 
+    
   /* my personal styles */
   body, html {
     background-color: white;
@@ -134,38 +141,10 @@
 }
 
   
-  .biography {
-    
-  
-  }
-  
-  .login-container {
-    
-    width: auto;
-    top: 50%;
-    margin-left: 25%;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    box-sizing: border-box;
-    overflow: hidden;
-  }
-  
-  .login-container1 {
-      border-style: solid;
-      border-color: green;
-  }
-  
   .footer {
       position: absolute;
       bottom: 0;
       
   }
 
-  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 320px) {
-    body, html, input[type=submit] {
-    width: 100%;
-      margin-top: 0;
-     }
-   } 
+
